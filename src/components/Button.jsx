@@ -14,7 +14,7 @@ const Button = ({size, color, children}) => {
     buttonColor = "bg-secondary text-primary"
   }
 
-  const buttonClass = `${buttonSize} flex items-center justify-center ${buttonColor} rounded-md font-semibold`
+  const buttonClass = `${buttonSize} flex items-center justify-center ${buttonColor} rounded-md font-semibold flex gap-x-4`
   return(
     <button className={buttonClass}>{children}</button>
   )
