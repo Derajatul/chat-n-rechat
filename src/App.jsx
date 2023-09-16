@@ -7,6 +7,7 @@ import DownloadIcon from './components/DownloadIcon'
 import UserIcon from './components/UserIcon'
 import CompanyList from './components/CompanyList'
 import CardFeature from './components/CardFeature'
+import ReasonCard from './components/ReasonCard'
 
 export default function App() {
   return (
@@ -54,7 +55,44 @@ export default function App() {
             <CardFeature img="./features/feature-3.svg" title="Groups to keep in touch" body="With voice calls, you can talk to your friends and family for free*, even if they're in another country. And with free* video calls, you can have face-to-face conversations." />
           </div>
         </div>
+      </section>
 
+      <section className="w-screen h-auto bg-transparent">
+        <div className="min-h-screen max-w-5xl mx-auto py-[100px] flex gap-[30px] flex-col-reverse lg:flex-row px-[20px]">
+          <img src="./section-3.svg" className="w-[498px]" />
+          <div>
+            <h3 className="text-dark font-semibold text-sm mb-[15px]">TEKNOLOGI YANG DIGUNAKAN</h3>
+            <h2 className="text-3xl text-dark mb-[10px]">Teknologi Yang Kami Gunakan Di Dalam Aplikasi Ini Akan Membuat DHH Dan Jason Fried Pensiun! 😱</h2>
+            <p className="text-darklight mb-[40px]">Lo bisa bayangin DHH sama Jason Fried aja jadi pensiun gegara aplikasi ini, apalagi lo yang cuma user dan beban kami, gegara lo pake dan daftar di aplikasi ini jadi kita harus bayar server DO tiap bulan, mana pas bayar harus tunjuk-tunjukan. Inilah alasan kenapa gak usah daftar:</p>
+            <div className="flex flex-col gap-[30px]">
+              <ReasonCard icon="😠" title="Kamu Adalah Beban Kami" body="Semakin banyak kamu yang mendaftar di aplikasi ini, artinya semakin banyak data yang perlu disimpan, nah kan jadi perlu server gede tuh. Makanya kamu beban!" />
+               <ReasonCard icon="🐨" title="Males Buat Ngembangin" body="Lo bakal nemu bug, entah pesan yang mau dikirim gak bisa dikirim padahal lo belom pencet tombol enter atau masalah lainnya. Nah soal itu kita males buat benerin." />
+               <ReasonCard icon="😴" title="Pokoknya Males Aja Lah" body="Nggak tau lagi harus ngomong apa, pokoknya males aja sih kita bikin aplikasi chat kek gini. Makannya mending lo pake WhatsApp aja udah." />
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section className="w-screen h-auto bg-transparent px-[20px]">
+        <div className="max-w-5xl mx-auto my-[100px] bg-primary rounded-3xl flex">
+          <div className="py-[100px] px-[80px] flex-1">
+            <h3 className="text-sm font-semibold text-white mb-[15px]">DOWNLOAD APLIKASINYA</h3>
+            <h2 className="text-3xl text-white mb-[10px]">Download Aplikasi Chat n’ Rechat Di Play Store, App Store, atau Symbian Store</h2>
+            <ul className="list-disc text-white/60 mb-[40px]">
+              <li>Android Version: Mojave+ </li>
+              <li>iOS Version: Lolipop+</li>
+              <li>Symbian: 20.04+</li>
+            </ul>
+            <div className="flex gap-[15px]">
+              <a href="#"><img src="./apple-download.svg" /></a>
+              <a href="#"><img src="./android-download.svg" /></a>
+            </div>
+          </div>
+          <div className="flex-1 justify-center lg:block hidden">
+            <img src="./download-section.svg" />
+          </div>
+        </div>
       </section>
     </main>
   )
