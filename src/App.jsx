@@ -58,7 +58,7 @@ export default function App() {
       </section>
 
       <section className="w-screen h-auto bg-transparent">
-        <div className="min-h-screen max-w-5xl mx-auto py-[100px] flex gap-[30px] flex-col-reverse lg:flex-row px-[20px] lg:px-0">
+        <div className="min-h-screen max-w-5xl mx-auto py-[100px] flex gap-[30px] flex-col-reverse lg:flex-row px-[20px] lg:px-0 items-center">
           <img src="./section-3.svg" className="w-[498px]" />
           <div>
             <h3 className="text-dark font-semibold text-sm mb-[15px]">TEKNOLOGI YANG DIGUNAKAN</h3>
