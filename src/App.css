@@ -1,5 +1,17 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  border: 1px solid red;
+}
+
+.section-1 {
+  background: linear-gradient(180deg, #EEF2FF 0%, rgba(238, 242, 255, 0.00) 100%);
+}
+.section-2 {
+  background: radial-gradient(50% 50% at 50% 50%, #E2EAFF 0%, #F4F7FF 100%);
+
 }
