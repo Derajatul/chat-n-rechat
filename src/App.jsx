@@ -114,7 +114,7 @@ export default function App() {
     </main>
       
     <footer className="w-screen h-auto">
-        <div className="max-w-5xl mx-auto p-[80px] bg-primarylight flex gap-[30px] flex-wrap">
+        <div className="max-w-5xl mx-auto p-[20px] md:p-[80px] bg-primarylight flex gap-[30px] flex-wrap">
           <div className="flex flex-col gap-[20px] w-[432px]">
             <h2 className="text-lg font-semibold">👋 CHAT N' RECHAT</h2>
             <p className="text-darklight">Sebenernya banyak banget aplikasi chatting yang lebih bagus dari ini, maka dari itu lebih baik pake yang lain aja deh ya daripada pake aplikasi yang ini.</p>
