@@ -8,11 +8,12 @@ import UserIcon from './components/UserIcon'
 import CompanyList from './components/CompanyList'
 import CardFeature from './components/CardFeature'
 import ReasonCard from './components/ReasonCard'
+import Accordion from './components/Accordion'
 
 export default function App() {
   return (
     <main>
-      <section className="section-1 w-screen h-auto">
+      <section id="beranda" className="section-1 w-screen h-auto">
         <div className="max-w-5xl mx-auto pt-[52px] min-h-screen flex flex-col gap-[75px] px-[20px] lg:px-0 ">
           <Nav />
           
@@ -44,7 +45,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="section-2 w-screen h-auto">
+      <section id="fitur" className="section-2 w-screen h-auto">
         <div className="max-w-5xl mx-auto py-[100px] min-h-screen px-[20px] lg:px-0">
           <h3 className="text-center text-sm font-semibold tracking-wider text-dark mb-4">NGGAK HARUS SIH SEBENERNYA</h3>
           <h2 className="text-center text-3xl text-dark mb-2.5">Kenapa Harus Pakai Chat N’ Rechat?</h2>
@@ -57,7 +58,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="w-screen h-auto bg-transparent">
+      <section id="teknologi" className="w-screen h-auto bg-transparent">
         <div className="min-h-screen max-w-5xl mx-auto py-[100px] flex gap-[30px] flex-col-reverse lg:flex-row px-[20px] lg:px-0 items-center">
           <img src="./section-3.svg" className="w-[498px]" />
           <div>
@@ -76,7 +77,7 @@ export default function App() {
 
       <section className="w-screen h-auto bg-transparent px-[20px]">
         <div className="max-w-5xl mx-auto my-[100px] bg-primary rounded-3xl flex">
-          <div className="py-[100px] px-[80px] flex-1">
+          <div className="lg:py-[100px] lg:px-[80px] py-[20px] px-[20px] flex-1">
             <h3 className="text-sm font-semibold text-white mb-[15px]">DOWNLOAD APLIKASINYA</h3>
             <h2 className="text-3xl text-white mb-[10px]">Download Aplikasi Chat n’ Rechat Di Play Store, App Store, atau Symbian Store</h2>
             <ul className="list-disc text-white/60 mb-[40px]">
@@ -92,6 +93,21 @@ export default function App() {
           <div className="flex-1 justify-center lg:block hidden">
             <img src="./download-section.svg" />
           </div>
+        </div>
+      </section>
+
+      <section id="faq" className="w-screen h-auto">
+        <div className="min-h-screen max-w-5xl mx-auto py-[100px]">
+          <h3 className="text-center text-xs text-dark font-semibold mb-[15px] ">BANYAK YANG NANYA</h3>
+          <h2 className="text-3xl text-dark text-center mb-[10px]">Pertanyaan Yang Sering Ditanyain</h2>
+          <p className="text-darklight max-w-[493px] text-center mx-auto mb-[100px]">Sebenernya pertanyaan-pertanyaan ini kagak ada yang nanya sih, tapi ya ditaruh sini aja siapa tau lo mau baca ‘kan.</p>
+          <div className="gap-[15px] flex flex-col">
+            <Accordion title="Apakah aplikasi ini sudah dapat izin dari MUI?" body="Aplikasi ini masih dalam proses perundingan dengan MUI. Mungkin aplikasi ini berusaha menawarkan solusi untuk masalah yang lebih besar: mencari izin dari MUI atau membuat MUI menggunakan aplikasinya. 😄" />
+            <Accordion title="Apakah aplikasi ini gratis?" body="Ya, aplikasi ini gratis sepenuhnya! Tidak perlu membayar sepeser pun. Namun, jika Anda ingin memberi donasi dalam bentuk cokelat atau kopi kepada tim pengembangnya, mungkin itu akan sangat dihargai. 😄☕🍫" />
+            <Accordion title="Apakah data saya akan dijual ke agen khusus US?" body="Tidak perlu khawatir, data Anda aman di sini! Kami lebih fokus pada pengembangan daripada menjual data pengguna. Kami adalah teman baik dari privasi dan kode etik pengembang. Jadi, tidak ada penjualan data ke agen khusus AS atau siapa pun di sini. 😄🔒" />
+            <Accordion title="Kenapa bumi muter? Apa karena di depan ada yang nikah?" body="Haha, tidak, Bumi tidak berputar karena ada yang nikah di depannya. Bumi berputar karena fenomena alam dan sifat gravitasi. Rotasi Bumi adalah bagian dari cara alam semesta bekerja. Jadi, tidak ada hubungannya dengan pernikahan di depan Bumi. Tetapi pertanyaan Anda lucu! 😄🌍💍" />
+            <Accordion title="Kenapa game epep burik, bang?" body="Saya minta maaf jika Anda merasa tidak puas dengan game tertentu, tetapi untuk memberikan pendapat lebih spesifik atau memberikan solusi, saya perlu tahu lebih banyak tentang game tersebut. Bisa Anda beri saya informasi lebih lanjut tentang mengapa Anda merasa game tersebut buruk atau apa yang ingin Anda perbaiki? Dengan informasi tambahan, saya mungkin bisa memberikan saran atau wawasan yang lebih baik. 😊" />
+          </div>   
         </div>
       </section>
     </main>
