@@ -1,7 +1,7 @@
 const ReasonCard = ({icon, title, body}) => {
   return(
     <div className="flex gap-[25px] justify-center items-start">
-      <div className="p-[14px] bg-darkextralight rounded-md">
+      <div className="p-[14px] bg-darkextralight rounded-md text-3xl">
         {icon}
       </div>
       <div>

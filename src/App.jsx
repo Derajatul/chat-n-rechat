@@ -12,8 +12,8 @@ import Accordion from './components/Accordion'
 
 export default function App() {
   return (
-    <main>
-      <section id="beranda" className="section-1 w-screen h-auto">
+    <>
+    <header id="beranda" className="section-1 w-screen h-auto">
         <div className="max-w-5xl mx-auto pt-[52px] min-h-screen flex flex-col gap-[75px] px-[20px] lg:px-0 ">
           <Nav />
           
@@ -43,8 +43,9 @@ export default function App() {
             <CompanyList />
           </div>
         </div>
-      </section>
-
+    </header>
+      
+    <main>
       <section id="fitur" className="section-2 w-screen h-auto">
         <div className="max-w-5xl mx-auto py-[100px] min-h-screen px-[20px] lg:px-0">
           <h3 className="text-center text-sm font-semibold tracking-wider text-dark mb-4">NGGAK HARUS SIH SEBENERNYA</h3>
@@ -75,7 +76,7 @@ export default function App() {
         </div>
       </section>
 
-      <section className="w-screen h-auto bg-transparent px-[20px]">
+      <section id="#download" className="w-screen h-auto bg-transparent px-[20px]">
         <div className="max-w-5xl mx-auto my-[100px] bg-primary rounded-3xl flex">
           <div className="lg:py-[100px] lg:px-[80px] py-[20px] px-[20px] flex-1">
             <h3 className="text-sm font-semibold text-white mb-[15px]">DOWNLOAD APLIKASINYA</h3>
@@ -111,5 +112,44 @@ export default function App() {
         </div>
       </section>
     </main>
+      
+    <footer className="w-screen h-auto">
+        <div className="max-w-5xl mx-auto p-[80px] bg-primarylight flex gap-[30px] flex-wrap">
+          <div className="flex flex-col gap-[20px] w-[432px]">
+            <h2 className="text-lg font-semibold">👋 CHAT N' RECHAT</h2>
+            <p className="text-darklight">Sebenernya banyak banget aplikasi chatting yang lebih bagus dari ini, maka dari itu lebih baik pake yang lain aja deh ya daripada pake aplikasi yang ini.</p>
+            <h4 className="text-xs font-semibold text-darklight">COPYRIGHT (C) 2021. DESIGN BY NAUVAL</h4>
+          </div>
+
+          <div className="flex flex-col gap-[20px]">
+            <h3 className="text-lg font-semibold">Sitemap</h3>
+            <ul className="flex flex-col gap-[10px] text-darklight">
+              <li><a href="#beranda">Beranda</a></li>
+              <li><a href="#fitur">Fitur-fitur</a></li>
+              <li><a href="teknologi">Teknologi</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#download">Download</a></li>
+              
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-[20px]">
+            <h3 className="text-lg font-semibold">Tetap Terhubung</h3>
+            <p className="text-darklight">Lihat kami pansos di sosial media berikut:</p>
+            <div className="flex gap-[10px]">
+              <a href="#" className="p-2 rounded-md bg-darkextralight">
+                <img src="./icons/instagram.svg" />
+              </a>
+              <a href="#" className="p-2 rounded-md bg-darkextralight">
+                <img src="./icons/facebook.svg" />
+              </a>
+              <a href="#" className="p-2 rounded-md bg-darkextralight">
+                <img src="./icons/twitter.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
   )
 }
