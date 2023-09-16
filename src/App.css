@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+/* *{
   border: 1px solid red;
-}
+} */
 
 .section-1 {
   background: linear-gradient(180deg, #EEF2FF 0%, rgba(238, 242, 255, 0.00) 100%);
